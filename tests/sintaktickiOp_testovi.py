@@ -1,5 +1,5 @@
 import unittest
-from src.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
+from srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
 
 
 class SintaktickiOperatoriTestovi(unittest.TestCase):

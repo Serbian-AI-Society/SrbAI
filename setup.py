@@ -24,7 +24,7 @@ setuptools.setup(
         "numpy",
         "nltk"
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    package_dir={"": "srbai"},
+    packages=setuptools.find_packages(where="srbai"),
     python_requires=">=3.6",
 )
