@@ -7,11 +7,11 @@ Vizija projekta je da postane **jedinstven i sveobuhvatan resurs za obradu srpsk
 ## Instalacija
 
 Kada klonirate paket, možete ga instalirati uz pomoć: 
-```
+```bash
 python -m pip install --upgrade build .
 ```
 Paket se može kreirati uz pomoć komande: 
-```
+```bash
 python -m build
 ```
 Nakon čega se može instalirati uz pomoć python pip komande
@@ -19,7 +19,7 @@ Nakon čega se može instalirati uz pomoć python pip komande
 ## Upotreba
 
 Nakon instalacije, paket se može importovati kao 
-```
+```python
 import srbai
 ```
 
@@ -27,7 +27,7 @@ import srbai
 
 Za transliteraciju postoje 2 metode, jedna za transliteraciju sa ćirilice na latinicu, dok druga za transliteraciju sa latinice na ćirilicu
 
-```
+```python
 from srbai.Alati.Transliterator import transliterate_cir2lat,transliterate_lat2cir
 
 lat = transliterate_cir2lat("Текст на ћирилици. ")
@@ -42,13 +42,13 @@ Stemer se može koristiti uz pomoć sledeće dve funkcije:
 * stem_arr - pretvata ulazni tekst u niz string-ova koji su stemmovani
 
 Primer:
-```
+```python
 from srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
 
 sent = stem_str("Jovica je išao u školu. Marija je dobra devojka.")
 ```
 
-```
+```python
 from srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
 
 sent_arr = stem_arr("Jovica je išao u školu. Marija je dobra devojka.")
@@ -63,12 +63,13 @@ O karakteristikama modela, oznakama vrsta reči možete više pročitati na http
 Da bi se model instancirao u memoriju, koristi se klasa, radi brže kasnije obrade i optimizacije resursa.
 
 Primeri korišćenja:
-```
+```python
 from srbai.SintaktickiOperatori.POS_tagger import POS_Tagger
 
 pt = POS_Tagger()
 tags = pt.tag('Jovica je išao u školu. Marija je dobra devojka.')
 # [('Jovica', b'N-msn'), ('je', b'Vcr3s'), ('išao', b'Vmp-sm'), ('u', b'Sa'), ('školu', b'N-fsa'), ('.', b'Z'), ('Marija', b'N-fsn'), ('je', b'Vcr3s'), ('dobra', b'Agpfsn'), ('devojka', b'N-fsn'), ('.', b'Z')]
 ```
+
 
 ## Autori i kontributori
