@@ -71,4 +71,5 @@ tags = pt.tag('Jovica je išao u školu. Marija je dobra devojka.')
 # [('Jovica', b'N-msn'), ('je', b'Vcr3s'), ('išao', b'Vmp-sm'), ('u', b'Sa'), ('školu', b'N-fsa'), ('.', b'Z'), ('Marija', b'N-fsn'), ('je', b'Vcr3s'), ('dobra', b'Agpfsn'), ('devojka', b'N-fsn'), ('.', b'Z')]
 ```
 
+
 ## Autori i kontributori
