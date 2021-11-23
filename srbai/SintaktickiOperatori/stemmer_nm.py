@@ -8,6 +8,8 @@ Updated on 11.16.2021 at Serbian AI Society
 from typing import List
 
 from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('punkt')
 
 rules = {
     'ovnicxki': '',
