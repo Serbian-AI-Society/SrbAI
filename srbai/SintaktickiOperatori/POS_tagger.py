@@ -8,10 +8,10 @@ import srbai
 
 class POS_Tagger():
     def __init__(self):
-        path = os.path.abspath(srbai.__file__).replace("\\__init__.py","")
-        os.environ["HUNPOS_TAGGER"] = os.environ["HUNPOS"] = path + "\\Resursi\\PomocneDatoteke\\hunpos-tag.exe"
+        path = os.path.abspath(srbai.__file__).replace(os.path.sep+"__init__.py","")
+        os.environ["HUNPOS_TAGGER"] = os.environ["HUNPOS"] = path + os.path.sep+"Resursi"+os.path.sep+"PomocneDatoteke"+os.path.sep+"hunpos-tag.exe"
         print(os.environ["HUNPOS_TAGGER"])
-        self.ht = HunposTagger(path + '\\Resursi\\Modeli\\model.hunpos.mte5.defnpout',encoding='UTF-8')
+        self.ht = HunposTagger(path + os.path.sep+'Resursi'+os.path.sep+'Modeli'+os.path.sep+'model.hunpos.mte5.defnpout',encoding='UTF-8')
 
 
     def tag(self, text):
