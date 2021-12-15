@@ -22,7 +22,8 @@ setuptools.setup(
     ],
     install_requires=[
         "numpy",
-        "nltk"
+        "nltk",
+        "classla"
     ],
     package_dir={"": "srbai"},
     packages=setuptools.find_packages(where="srbai"),
