@@ -22,7 +22,7 @@ Nakon instalacije, paket se može importovati kao
 
 ```python
 
-import srbai
+from src import srbai
 ```
 
 ### Transliteracija
@@ -30,7 +30,7 @@ import srbai
 Za transliteraciju postoje 2 metode, jedna za transliteraciju sa ćirilice na latinicu, dok druga za transliteraciju sa latinice na ćirilicu
 
 ```python
-from lib.srbai.Alati.Transliterator import transliterate_cir2lat, transliterate_lat2cir
+from src.srbai.Alati.Transliterator import transliterate_cir2lat, transliterate_lat2cir
 
 lat = transliterate_cir2lat("Текст на ћирилици. ")
 cir = transliterate_lat2cir("Tekst na latinici. ")
@@ -46,13 +46,13 @@ Stemer se može koristiti uz pomoć sledeće dve funkcije:
 Primer:
 
 ```python
-from lib.srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
+from src.srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
 
 sent = stem_str("Jovica je išao u školu. Marija je dobra devojka.")
 ```
 
 ```python
-from lib.srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
+from src.srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
 
 sent_arr = stem_arr("Jovica je išao u školu. Marija je dobra devojka.")
 ```
@@ -68,7 +68,7 @@ Da bi se model instancirao u memoriju, koristi se klasa, radi brže kasnije obra
 Primeri korišćenja:
 
 ```python
-from lib.srbai.SintaktickiOperatori.POS_tagger import POS_Tagger
+from src.srbai.SintaktickiOperatori.POS_tagger import POS_Tagger
 
 pt = POS_Tagger()
 tags = pt.tag('Jovica je išao u školu. Marija je dobra devojka.')
