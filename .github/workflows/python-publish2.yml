@@ -29,6 +29,7 @@ jobs:
         pip install build
         pwd
         ls -la
+        chmod +x src/srbai/Resursi/PomocneDatoteke/hunpos-tag.exe
         python -m pip install --upgrade build .
     - name: Build package
       run: python -m build
