@@ -1,5 +1,5 @@
 import unittest
-from srbai.NER.NER_classla import NER_classla
+from lib.srbai.NER.NER_classla import NER_classla
 
 
 class NER_Testovi(unittest.TestCase):
