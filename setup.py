@@ -25,7 +25,7 @@ setuptools.setup(
         "nltk",
         "classla==1.1.0"
     ],
-    package_dir={"": "lib"},
+    package_dir={"": "srbai"},
     packages=setuptools.find_packages(where="lib"),
     python_requires=">=3.6",
 )
