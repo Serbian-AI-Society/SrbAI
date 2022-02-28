@@ -22,7 +22,8 @@ setuptools.setup(
     ],
     install_requires=[
         "numpy",
-        "nltk","torch",
+        "nltk",
+        "torch==1.10.2 -f https://download.pytorch.org/whl/torch_stable.html",
         "classla==1.1.0"
 
     ],
