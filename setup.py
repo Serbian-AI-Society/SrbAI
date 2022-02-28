@@ -17,15 +17,15 @@ setuptools.setup(
     },
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GPLv3 License",
         "Operating System :: OS Independent",
     ],
     install_requires=[
         "numpy",
         "nltk",
-        "classla"
+        "classla==1.1.0"
     ],
-    package_dir={"": "srbai"},
+    package_dir={"srbai": "srbai"},
     packages=setuptools.find_packages(where="srbai"),
     python_requires=">=3.6",
 )
