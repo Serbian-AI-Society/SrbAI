@@ -22,9 +22,9 @@ setuptools.setup(
     ],
     install_requires=[
         "numpy",
-        "nltk",
-        "classla==1.1.0",
-        "torch"
+        "nltk","torch",
+        "classla==1.1.0"
+
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
