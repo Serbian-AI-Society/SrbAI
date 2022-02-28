@@ -26,6 +26,6 @@ setuptools.setup(
         "classla==1.1.0"
     ],
     package_dir={"": "lib"},
-    packages=setuptools.find_packages(where="srbai"),
+    packages=setuptools.find_packages(where="lib"),
     python_requires=">=3.6",
 )
