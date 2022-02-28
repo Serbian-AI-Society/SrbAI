@@ -1,5 +1,5 @@
 import unittest
-from lib.srbai.Alati.Transliterator import transliterate_cir2lat,transliterate_lat2cir
+from srbai import transliterate_cir2lat,transliterate_lat2cir
 
 
 class AlatiTestovi(unittest.TestCase):

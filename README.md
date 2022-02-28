@@ -22,7 +22,7 @@ Nakon instalacije, paket se može importovati kao
 
 ```python
 
-from lib import srbai
+import srbai
 ```
 
 ### Transliteracija

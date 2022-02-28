@@ -1,6 +1,6 @@
 import unittest
-from lib.srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
-from lib.srbai.SintaktickiOperatori.POS_tagger import POS_Tagger
+from srbai import stem_str, stem_arr
+from srbai import POS_Tagger
 
 
 class SintaktickiOperatoriTestovi(unittest.TestCase):
