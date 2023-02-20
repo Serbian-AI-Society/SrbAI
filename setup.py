@@ -23,7 +23,7 @@ setuptools.setup(
     install_requires=[
         "numpy",
         "nltk",
-        "torch==1.10.2",
+        "torch>=1.10.2",
         "classla==1.1.0"
 
     ],
