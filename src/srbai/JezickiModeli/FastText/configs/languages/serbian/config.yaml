@@ -1,0 +1,18 @@
+corpus_path: "./texts/serbian_corpus_short.txt"
+stopwords_path: "./texts/stopwords/serbian_stopwords.txt"
+
+io:
+  # project root
+  root: "./"
+
+  # directory in which to save all the files, preferably with save in it for .gitignore to catch it
+  save_dir: "saved_models"
+
+  # pickle file name for saved vector space
+  vector_space_file: "srb_vector_space.pkl.b64"
+
+  # pickle file name for saved ngram vectors
+  ngram_vectors_file: "srb_ngram_vectors.pkl.b64"
+
+  # pickle file name for saved word map
+  word_map_file: "srb_word_map.pkl.b64"
