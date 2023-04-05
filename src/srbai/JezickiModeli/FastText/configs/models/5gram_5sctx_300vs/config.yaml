@@ -1,0 +1,28 @@
+text_preprocessing:
+  # size of a single ngram
+  ngram_size: 5
+
+  # number of words to the left and right of the current word to look at as context
+  context_window:
+    left: 5
+    right: 5
+
+  # keep input word in context as well
+  self_context: True
+
+# parameters for the neural network model
+neural_network:
+  # the size of the vector space that is being trained
+  vector_space_size: 300
+
+  # optimizer parameters
+  optimizer:
+    omega1: 0.9
+    omega2: 0.99
+    norm: 1.0e-8
+
+  # learn_rate for the optimization
+  learn_rate: 1.0e-3
+
+  # training epochs
+  epochs: 100

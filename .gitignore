@@ -94,6 +94,9 @@ ipython_config.py
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
+# pycache
+__pycache__/
+
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
@@ -116,6 +119,9 @@ venv.bak/
 
 # Rope project settings
 .ropeproject
+
+# PyCharm project settings
+.idea
 
 # mkdocs documentation
 /site
