@@ -91,3 +91,5 @@ Modul se može koristiti kako bi se natrenirala skroz nova mreža, odnosno embed
 Primeri kako se ovo može postići i kako se model koristi nakon postavljanja konfiguracija se nalazi u `__main__.py` fajlu unutar modula. Takođe unutar modula se nalaze primer konfiguracije za srpski jezik, kojem je potrebno promeniti samo `corpus_path` ukoliko želite odmah da ga koristite. Kao i primer jednog kratkog korpusa na srpskom.
 
 ## Autori i kontributori
+- Nikola Milosevuc (@nikolamilosevic86)
+- Vladimir Lunic (@Vlodson)
