@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="SrbAI",
-    version="0.0.8",
+    version="0.0.9",
     author="Serbian AI Society",
     author_email="nikola.milosevic86@gmail.com",
     description="Library for processing serbian language",
@@ -30,6 +30,8 @@ setuptools.setup(
 
     ],
     package_dir={"": "src"},
+    package_data={'': ['src/srbai/Resursi/*']},
+    include_package_data=True,
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.7",
 )
