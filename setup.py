@@ -11,9 +11,10 @@ setuptools.setup(
     description="Library for processing serbian language",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/Serbian-AI-Society/SrbAI",
     project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+        "Bug Tracker": "https://github.com/Serbian-AI-Society/SrbAI/issues",
+        "Road Map":"https://github.com/Serbian-AI-Society/SrbAI/projects/1"
     },
     classifiers=[
         "Programming Language :: Python :: 3",
