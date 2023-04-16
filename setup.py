@@ -1,7 +1,16 @@
 import setuptools
-
+import os
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
+
+def package_files(directory):
+    paths = []
+    for (path, directories, filenames) in os.walk(directory):
+        for filename in filenames:
+            paths.append(os.path.join('..', path, filename))
+    return paths
+
+extra_files = package_files('src/srbai/Resursi')
 
 setuptools.setup(
     name="SrbAI",
@@ -30,7 +39,7 @@ setuptools.setup(
 
     ],
     package_dir={"": "src"},
-    package_data={'': ['src/srbai/Resursi/*']},
+    package_data={'': extra_files},
     include_package_data=True,
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.7",
