@@ -7,14 +7,14 @@ def package_files(directory):
     paths = []
     for (path, directories, filenames) in os.walk(directory):
         for filename in filenames:
-            paths.append(os.path.join('', path, filename))
+            paths.append(os.path.abspath(os.path.join('', path, filename)))
     return paths
 
 extra_files = package_files('src/srbai/Resursi')
 
 setuptools.setup(
     name="SrbAI",
-    version="0.0.11",
+    version="0.0.12",
     author="Serbian AI Society",
     author_email="nikola.milosevic86@gmail.com",
     description="Library for processing serbian language",
