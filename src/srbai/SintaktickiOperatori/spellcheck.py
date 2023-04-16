@@ -17,10 +17,10 @@ class SpellCheck:
                     new_path = new_path + p + os.path.sep
                     i = i + 1
             if dictionary == 'sr-latin':
-                dictionary = new_path + os.path.sep+"Resursi"+os.path.sep+"Recnici"+os.path.sep+ "Serbian (Latin).dic"
+                dictionary = new_path + "Resursi"+os.path.sep+"Recnici"+os.path.sep+ "Serbian (Latin).dic"
                 dictionary = dictionary.replace(os.path.sep+os.path.sep,os.path.sep)
             if dictionary == 'sr-cirilic':
-                dictionary = new_path + "/Resursi/Recnici/Serbian (Cyrilic).dic"
+                dictionary = new_path + "Resursi"+os.path.sep+"Recnici"+os.path.sep+"Serbian (Cyrilic).dic"
                 dictionary = dictionary.replace(os.path.sep + os.path.sep, os.path.sep)
 
         self.trie = {}
