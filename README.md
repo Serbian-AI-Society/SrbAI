@@ -77,6 +77,11 @@ else:
     print("No close match found.")
 ```
 
+Izlaz treba da izgleda na sledeci nacin:
+```commandline
+Did you mean 'predatori'?
+```
+
 
 ### Pronalaženje vrsta reči (Part-of-speech tagging)
 
