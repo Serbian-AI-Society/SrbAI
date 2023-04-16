@@ -82,7 +82,6 @@ Izlaz treba da izgleda na sledeci nacin:
 Did you mean 'predatori'?
 ```
 
-
 ### Pronalaženje vrsta reči (Part-of-speech tagging)
 
 Za pronalaženje vrsta reči u rečenici i morfološku analizu koristimo HunPos model koji je treniran za srpski i hrvatski jezik.
@@ -110,6 +109,11 @@ Kako bi se model koristio potrebno je namestiti konfiguraciju za jezik i za mode
 Modul se može koristiti kako bi se natrenirala skroz nova mreža, odnosno embedovao skroz novi vektorski prostor. Takođe ako već postoji natrenirani model onda ga je moguće koristiti kako bi se dobila vektorska reprezentacija neke prosleđene reči, kao i pronalaženje najsličnijih reči nekoj prosleđenoj reči.
 
 Primeri kako se ovo može postići i kako se model koristi nakon postavljanja konfiguracija se nalazi u `__main__.py` fajlu unutar modula. Takođe unutar modula se nalaze primer konfiguracije za srpski jezik, kojem je potrebno promeniti samo `corpus_path` ukoliko želite odmah da ga koristite. Kao i primer jednog kratkog korpusa na srpskom.
+
+## Colab notebooks
+
+* [SrbAI - SpellCheck Demo](https://colab.research.google.com/drive/1I0ZW8IcHERQg2-FoV837hzJPb70Qd5IM?usp=sharing)
+
 
 ## Autori i kontributori
 - Nikola Milosevuc ([@nikolamilosevic86](https://github.com/nikolamilosevic86))
