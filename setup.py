@@ -24,7 +24,8 @@ setuptools.setup(
         "numpy",
         "nltk",
         "torch>=1.10.2",
-        "classla==1.1.0"
+        "classla==1.1.0",
+        "nlu"
 
     ],
     package_dir={"": "src"},

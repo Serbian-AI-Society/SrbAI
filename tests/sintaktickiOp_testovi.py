@@ -1,6 +1,9 @@
+import time
 import unittest
-from src.srbai import stem_str, stem_arr
-from src.srbai import POS_Tagger
+
+from srbai.SintaktickiOperatori.POS_tagger import POS_Tagger
+from srbai.SintaktickiOperatori.spellcheck import SpellCheck
+from srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
 
 
 class SintaktickiOperatoriTestovi(unittest.TestCase):
@@ -20,5 +23,6 @@ class SintaktickiOperatoriTestovi(unittest.TestCase):
         tags = pt.tag(
             'Radn površina')
         print(tags)
+
 if __name__ == '__main__':
     unittest.main()

@@ -27,7 +27,7 @@ Nakon instalacije, paket se može importovati kao
 
 ```python
 
-from src import srbai
+import srbai
 ```
 
 ### Transliteracija
@@ -35,7 +35,7 @@ from src import srbai
 Za transliteraciju postoje 2 metode, jedna za transliteraciju sa ćirilice na latinicu, dok druga za transliteraciju sa latinice na ćirilicu
 
 ```python
-from src.srbai.Alati.Transliterator import transliterate_cir2lat, transliterate_lat2cir
+from srbai.Alati.Transliterator import transliterate_cir2lat, transliterate_lat2cir
 
 lat = transliterate_cir2lat("Текст на ћирилици. ")
 cir = transliterate_lat2cir("Tekst na latinici. ")
@@ -51,16 +51,32 @@ Stemer se može koristiti uz pomoć sledeće dve funkcije:
 Primer:
 
 ```python
-from src.srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
+from srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
 
 sent = stem_str("Jovica je išao u školu. Marija je dobra devojka.")
 ```
 
 ```python
-from src.srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
+from srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
 
 sent_arr = stem_arr("Jovica je išao u školu. Marija je dobra devojka.")
 ```
+
+### Spell checker za srpski jezik
+
+U okviru SrbAI projekta je implementiran i spell checker zasnovan na rečnicima poteklim iz OpenOffice projekta. 
+Implementacija je zasnovana na Trie strukturi podataka i Levensteinovoj distanci. Ovaj rečnik se može koristiti na sledeći način:
+```python
+from srbai.SintaktickiOperatori.spellcheck import SpellCheck
+sc = SpellCheck('sr-latin') #postoji opcija i #sr-cyrilic za ćirilicu
+word = "predetori"
+correction = sc.spellcheck(word)
+if correction:
+    print(f"Did you mean '{correction}'?")
+else:
+    print("No close match found.")
+```
+
 
 ### Pronalaženje vrsta reči (Part-of-speech tagging)
 
@@ -73,7 +89,7 @@ Da bi se model instancirao u memoriju, koristi se klasa, radi brže kasnije obra
 Primeri korišćenja:
 
 ```python
-from src.srbai.SintaktickiOperatori.POS_tagger import POS_Tagger
+from srbai.SintaktickiOperatori.POS_tagger import POS_Tagger
 
 pt = POS_Tagger()
 tags = pt.tag('Jovica je išao u školu. Marija je dobra devojka.')
