@@ -15,9 +15,9 @@ class POS_Tagger():
             os.environ["HUNPOS_TAGGER"] = os.environ["HUNPOS"] =  path + os.path.sep+"Resursi"+os.path.sep+"PomocneDatoteke"+os.path.sep+"hunpos-tag"
         elif sys.platform == "nt":
             os.environ["HUNPOS_TAGGER"] = os.environ["HUNPOS"] =  path + os.path.sep+"Resursi"+os.path.sep+"PomocneDatoteke"+os.path.sep+"hunpos-tag.exe"
-        else:
+        elif sys.platform == 'linux':
             os.environ["HUNPOS_TAGGER"] = os.environ[
-                "HUNPOS"] = path + os.path.sep + "Resursi" + os.path.sep + "PomocneDatoteke" + os.path.sep + "hunpos-tag"
+                "HUNPOS"] = path + os.path.sep + "Resursi" + os.path.sep + "PomocneDatoteke" + os.path.sep + "hunpos-tag-lx"
         self.ht = HunposTagger(path + os.path.sep+'Resursi'+os.path.sep+'Modeli'+os.path.sep+'model.hunpos.mte5.defnpout',encoding='UTF-8')
 
 
