@@ -13,11 +13,12 @@ class POS_Tagger():
         path = os.path.abspath(srbai.__file__).replace(os.path.sep + "__init__.py", "")
         if sys.platform == "darwin":
             os.environ["HUNPOS_TAGGER"] = os.environ["HUNPOS"] =  path + os.path.sep+"Resursi"+os.path.sep+"PomocneDatoteke"+os.path.sep+"hunpos-tag"
-        elif sys.platform == "nt":
-            os.environ["HUNPOS_TAGGER"] = os.environ["HUNPOS"] =  path + os.path.sep+"Resursi"+os.path.sep+"PomocneDatoteke"+os.path.sep+"hunpos-tag.exe"
         elif sys.platform == 'linux':
             os.environ["HUNPOS_TAGGER"] = os.environ[
                 "HUNPOS"] = path + os.path.sep + "Resursi" + os.path.sep + "PomocneDatoteke" + os.path.sep + "hunpos-tag-lx"
+        else:
+            os.environ["HUNPOS_TAGGER"] = os.environ[
+                "HUNPOS"] = path + os.path.sep + "Resursi" + os.path.sep + "PomocneDatoteke" + os.path.sep + "hunpos-tag.exe"
         self.ht = HunposTagger(path + os.path.sep+'Resursi'+os.path.sep+'Modeli'+os.path.sep+'model.hunpos.mte5.defnpout',encoding='UTF-8')
 
 
