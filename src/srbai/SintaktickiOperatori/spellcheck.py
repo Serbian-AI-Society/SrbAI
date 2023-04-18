@@ -14,7 +14,7 @@ class SpellCheck:
             new_path = ""
             for p in path:
                 if i<path_len-2:
-                    if p == '' or p == ' ':
+                    if p == 'SintaktickiOperatori':
                         continue
                     new_path = new_path + p + os.path.sep
                     i = i + 1
