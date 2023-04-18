@@ -1,8 +1,6 @@
-import time
 import unittest
 
 from srbai.SintaktickiOperatori.POS_tagger import POS_Tagger
-from srbai.SintaktickiOperatori.spellcheck import SpellCheck
 from srbai.SintaktickiOperatori.stemmer_nm import stem_str, stem_arr
 
 
