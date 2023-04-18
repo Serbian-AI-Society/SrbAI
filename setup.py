@@ -14,7 +14,7 @@ extra_files = package_files('src/srbai/Resursi')
 
 setuptools.setup(
     name="SrbAI",
-    version="0.0.17",
+    version="0.0.18",
     author="Serbian AI Society",
     author_email="nikola.milosevic86@gmail.com",
     description="Library for processing serbian language",
