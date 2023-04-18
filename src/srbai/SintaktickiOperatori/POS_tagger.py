@@ -3,7 +3,7 @@ import os
 from nltk import word_tokenize
 from nltk.tag.hunpos import HunposTagger
 
-from src import srbai
+import srbai
 
 
 class POS_Tagger():
