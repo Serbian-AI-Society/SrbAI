@@ -3,6 +3,7 @@ import sys
 
 from nltk import word_tokenize
 from nltk.tag.hunpos import HunposTagger
+import nltk
 
 import srbai
 
@@ -10,16 +11,14 @@ import srbai
 class POS_Tagger():
     #Probably still does not work on Linux, just MacOS and Windows supported
     def __init__(self):
+        nltk.download('punkt')
         path = os.path.abspath(srbai.__file__).replace(os.path.sep + "__init__.py", "")
         if sys.platform == "darwin":
-            print("setting MacOS variant of HunPos")
             os.environ["HUNPOS_TAGGER"] = os.environ["HUNPOS"] =  path + os.path.sep+"Resursi"+os.path.sep+"PomocneDatoteke"+os.path.sep+"hunpos-tag"
         elif sys.platform == 'linux':
-            print("setting linux variant of HunPos")
             os.environ["HUNPOS_TAGGER"] = os.environ[
                 "HUNPOS"] = path + os.path.sep + "Resursi" + os.path.sep + "PomocneDatoteke" + os.path.sep + "hunpos-tag-lx"
         else:
-            print("setting Windows variant of HunPos")
             os.environ["HUNPOS_TAGGER"] = os.environ[
                 "HUNPOS"] = path + os.path.sep + "Resursi" + os.path.sep + "PomocneDatoteke" + os.path.sep + "hunpos-tag.exe"
         self.ht = HunposTagger(path + os.path.sep+'Resursi'+os.path.sep+'Modeli'+os.path.sep+'model.hunpos.mte5.defnpout',encoding='UTF-8')
