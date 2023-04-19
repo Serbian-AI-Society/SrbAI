@@ -112,7 +112,7 @@ Primeri kako se ovo može postići i kako se model koristi nakon postavljanja ko
 
 ## Colab notebooks
 
-* [SrbAI - SpellCheck Demo](https://colab.research.google.com/drive/1I0ZW8IcHERQg2-FoV837hzJPb70Qd5IM?usp=sharing)
+* [SrbAI - Demo](https://colab.research.google.com/drive/1I0ZW8IcHERQg2-FoV837hzJPb70Qd5IM?usp=sharing)
 
 
 ## Autori i kontributori
